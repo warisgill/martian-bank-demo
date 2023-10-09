@@ -40,7 +40,7 @@ securityContext:
 
 service:
   type: ClusterIP
-  port: 85
+  port: 3333
 
 ingress:
   enabled: false
@@ -76,7 +76,7 @@ autoscaling:
   enabled: false
   minReplicas: 1
   maxReplicas: 100
-  targetCPUUtilizationPercentage: 80
+  targetCPUUtilizationPercentage: 20
   # targetMemoryUtilizationPercentage: 80
 
 nodeSelector: {}
